@@ -1,19 +1,18 @@
 <script>
 import Left from "./components/left.vue";
-import Center from "./components/center.vue";
 import Right from "./components/right.vue";
 
 export default {
-  name: "SmartMeeting",
-  components: {Right, Left, Center}
+  name: "DataAlignment",
+  components: {Right, Left}
 }
 </script>
 
 <template>
 <div class="smart-meeting">
-
-  <Center/>
   <Left/>
+  <Right/>
+
 <!--  <Right/>-->
 </div>
 </template>

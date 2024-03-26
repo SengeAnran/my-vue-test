@@ -18,6 +18,21 @@ export const routes = [
       //   component: () => import('../pages/about.vue'),
       // },
       {
+        path: 'DataAlignment',
+        name: '数据对齐',
+        component: () => import('../pages/DataAlignment/index.vue'),
+      },
+      {
+        path: 'DataHandling',
+        name: '数据处理',
+        component: () => import('../pages/DataHandling/index.vue'),
+      },
+      {
+        path: 'DataClause',
+        name: '数据分句',
+        component: () => import('../pages/DataClause/index.vue'),
+      },
+      {
         path: 'SmartMeeting',
         name: '智能会议',
         component: () => import('../pages/SmartMeeting/index.vue'),
