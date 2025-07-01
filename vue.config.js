@@ -6,8 +6,32 @@ module.exports = {
       alias: {
         '@': path.resolve(__dirname, 'src')
       }
-    }
+    },
+    module: {
+      rules: [
+        {
+          test: /\.js$/,
+          // 指定只处理 marked 库的文件
+          include: path.resolve(__dirname, 'node_modules/marked'),
+          use: {
+            loader: 'babel-loader'
+          }
+        }
+      ]
+    },
+
   },
+  // chainWebpack: config => {
+  //   config.module
+  //       .rule('')
+  //       .test(/\.md$/)
+  //       .use('html-loader')
+  //       .loader('html-loader')
+  //       .end()
+  //       .use('markdown-loader')
+  //       .loader('markdown-loader')
+  //       .end()
+  // },
   devServer: {
     host: "0.0.0.0",
     port: 80,

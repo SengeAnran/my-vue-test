@@ -70,6 +70,11 @@ export const routes = [
         path: 'vuex',
         name: '状态管理',
         component: () => import('@/pages/Vuex/index.vue'),
+      },
+      {
+        path: 'quill',
+        name: '富文本',
+        component: () => import('@/pages/vueQuill/index.vue'),
       }
     ]
   },
